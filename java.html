@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nome = prompt (`digite seu nome`);
+        let genero = '';
+        valida_genero ();
+        let valida_M = genero == `M`;
+        let valida_F = genero == `F`;
+        let anoatual = prompt (`digite o ano atual`);
+        let nascimento = prompt (`digite o ano de nascimento`);
+        let idade = anoatual - nascimento;
+        let valida_idadeM = idade >=65;
+        let valida_idadeF = idade >=60;
+        let aposentado = `com ${idade} anos ${nome}, pode aposentar-se!`;
+        let naoaposentado = `com ${idade} anos ${nome}, não poderá se aposentar!`;
+
+        if (valida_M){
+            if (valida_idadeM){
+                alert (aposentado);
+            }
+            else { 
+                alert (naoaposentado);
+            }
+        }
+        else {
+            if (valida_idadeF){
+                alert (aposentado);
+            }
+            else {
+                alert (naoaposentado);
+            }
+        }
+        function valida_genero (){
+            while (genero != 'M' || genero != `F` ){
+                genero = prompt (`digite M para masculino e F para feminino`);
+            }
+        }
+
+    </script>
+</body>
+</html>
