@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<script>
+    let num1 = parseInt(prompt (`digite um numero`));
+    let num2 = parseInt(prompt (`digite um numero`));
+    let operacao;
+
+    operacao = prompt (`digite 1 para soma, 2 para subtracao, 3 para multiplicacao ou 4 para divisao`);
+
+    let soma = num1 + num2
+    let subtracao = num1 - num2
+    let multiplicacao = num1 * num2
+    let divisao = num1 / num2
+
+        switch (operacao) {
+            case `1`:
+                alert (`a soma dos valores é ${soma}`);
+                break;
+            case `2`:
+                alert (`a subtracao dos valores é ${subtracao}`);
+                break;
+            case `3`:
+                alert (`a multiplicacao dos valores é ${multiplicacao}`);
+                break;
+            case `4`:
+                alert (`a divisao dos valores é ${divisao}`);
+                break;
+        }
+
+</script>
+
+</body>
+</html>
